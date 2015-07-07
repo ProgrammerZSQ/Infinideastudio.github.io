@@ -7,13 +7,6 @@
 	<meta name="keywords" content="NEWorld">
 	<meta name="description" content="NEWorld">
 	<meta name="author" content="qiaozhanrong">
-	<!--
-	<style type="text/css">
-		body {background-color:#0099ff;font-family:sans-serif;}
-		p {color:#ffffff}
-		td {color:#ffffff}
-	</style>
-	-->
 	<!--Bootstrap-->
 	<link href="../css/bootstrap.min.css" rel="stylesheet">
 	<link href="../css/bootstrap-theme.min.css" rel="stylesheet">
@@ -21,38 +14,22 @@
 	</style>
   </head>
   <body>
-	<!-- jQ -->
-	<script src="../jquery-1.11.3.min.js"></script>
-	<!-- Boot init js -->
-	<script src="../js/bootstrap.min.js"></script>
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	
 	<nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Infinideas</a>
-        </div>
+        <a class="navbar-brand" href="#">Infinideas</a>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="../index.html">首页</a></li>
-            <li><a href="#about">关于</a></li>
+            <li class="active"><a href="#">首页</a></li>
+            <li><a href="#about" style="display:hidden">关于</a></li>
             <li><a href="#contact">联络我们</a></li>
-            <li class="dropdown active">
+            <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">项目<span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li class="dropdown-header">钉选</li>
-                <li><span>&nbsp;&nbsp;<a href="#">HackerMissions</a>(<a href="https://github.com/Infinideastudio/HackerMissions">Git</a>)</span></li>
-				<!--<li><a href="#">One more separated link</a></li>-->
-                <li role="separator" class="divider"></li>
-                <li class="dropdown-header">所有</li>
-                <li><span>&nbsp;&nbsp;<a href="#">HackerMissions</a>(<a href="https://github.com/Infinideastudio/HackerMissions">Git</a>)</span></li>
-                <li><span>&nbsp;&nbsp;<a href="NEWorld/index.html">NEWorld</a>(<a href="http://www.neworldsite.icoc.cc">官网</a>|<a href="http://tieba.baidu.com/p/2822071396">贴吧</a>)
-                <!--<li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>-->
+                <li><span>&nbsp;&nbsp;<a style="font-weight:bold" href="#">HackerMissions</a>(<a href="https://github.com/Infinideastudio/HackerMissions">Git</a>)</span></li>
+                <li><span>&nbsp;&nbsp;<a style="font-weight:bold" href="NEWorld/index.html">NEWorld</a>(<a href="http://www.neworldsite.icoc.cc">官网</a> | <a href="http://tieba.baidu.com/p/2822071396">贴吧</a>)
               </ul>
             </li>
           </ul>
@@ -60,22 +37,26 @@
       </div>
     </nav>
 	
-	<div class="container">
+	<div class="container" style="padding-top: 3%">
 		
-    <!--我TM真不知道怎么把元素往下移 qiaozhanrong-->
-    <p /> <p /> <p /> <p /> <!--弄兩個空段就好辣 0u0 edit:還是四個比較好233 -->
+    <!--我TM真不知道怎么把元素往下移 qiaozhanrong -->
+	<!--不会用css的渣渣233↑-->
 		<div id="title" class="jumbotron"> <!-- jumbotron大法-->
-			<p style="text-align:center;font-family:微软雅黑,sans-serif;font-size:36px">NEWorld Official Website - New Version<sup> Alpha</sup></p>
+			<p style="text-align:center;font-size:36px">NEWorld Official Website - New Version<sup> Alpha</sup></p>
 		</div>
 		<!--无聊弄的测试而已，先无视2333 qiaozhanrong-->
 		<div id="content" style="width:1140px">
       <!-- Example row of columns -->
       <div class="row">
-        <div class="col-md-4">
-          <h2>NEWorld简介</h2>
+        <div class="col-md-4" style="text-indent:2em;">
+          <h2 style="text-indent:0;">NEWorld简介</h2>
           <!-- (╯‵□′)╯︵┻━┻你敢多用點br嗎 qiaozhanrong-->
-          <p>NEWorld是一个类似《Minecraft》（我的世界）的沙盒游戏，由中国一个五年级小学生开发。该游戏由FreeBASIC编写，完全开源。方块世界和建造的主题源于Minecraft，游戏内容与Minecraft差不多。<br>NEWorld一开始是由qiaozhanrong在Minecraft吧发出的帖子“<a href="http://tieba.baidu.com">[程序猿乱入]自己编程造MC !!!!!!!</a>”使它的原始版本“草方块(grass)”在百度贴吧Minecraft吧一夜成名，当时qiaozhanrong小学五年级。<br>后来，他开始将这个只有一个方块的程序做成像Minecraft一样的方块世界，他说他要“在写程序的过程中积累编程经验。”</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+		  <!-- (╯‵□′)╯︵┻━┻你敢少用点br吗 0u0-->
+		  <!-- 于是别人一看源代码发现都在吵架233 然后骂街：我他喵流量就是给你们吵架的吗(╯‵□′)╯︵┻━┻ -->
+          <p>NEWorld是一个类似《Minecraft》（我的世界）的沙盒游戏，由中国一个五年级小学生开发。该游戏由FreeBASIC编写，完全开源。方块世界和建造的主题源于Minecraft，游戏内容与Minecraft差不多。</p>
+		  <p>NEWorld一开始是由qiaozhanrong在Minecraft吧发出的帖子“<a href="http://tieba.baidu.com">[程序猿乱入]自己编程造MC !!!!!!!</a>”使它的原始版本“草方块(grass)”在百度贴吧Minecraft吧一夜成名，当时qiaozhanrong仅仅小学五年级。</p>
+		  <p>后来，他开始将这个只有一个方块的程序做成像Minecraft一样的方块世界，他说他要“在写程序的过程中积累编程经验。”</p>
+          <p style="text-indent:0"><a class="btn btn-default" href="#" role="button">这个按钮按下去并不会发生什么 &raquo;</a></p>
         </div>
         <div class="col-md-4">
           <h2>Heading</h2>
@@ -91,7 +72,7 @@
       <hr />
 
       <footer>
-        <p>版权没有，仿冒不究！ copyLEFT &copy; Infinideas 2014-2015</p>
+        <p>Copyleft &copy; Infinideas 2014-2015</p>
       </footer>
     </div> <!-- /container -->
 		</div>
