@@ -1,92 +1,169 @@
 ﻿<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="新创无际Infinideas">
-	<meta name="keywords" content="新创无际,Infinideas,Infinideastudio">
-	<meta name="author" content="jacky8399(0u0), abc612008(Null)">
-    <title>Infinideas</title>
-	<!--Bootstrap-->
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
-	<style>
-	</style>
-  </head>
-  <body>
-	<script src="js/jquery-1.11.3.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	
-	<nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container"><div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Infinideas</a>
+	<head>
+		<meta charset="UTF-8">
+		<title>0u0Tester</title>
+		<!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="mat/css/materialize.min.css"  media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <style>
+      body {
+    	display: flex;
+    	min-height: 100vh;
+    	flex-direction: column;
+  	}
+
+  	main {
+  	  flex: 1 0 auto;
+ 	 }
+      </style>
+    </head>
+
+    <body>
+  <div class="navbar-fixed white black-text">
+  <nav class="black-text light-blue lighten-1">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center white-text">Infinideas</a>
+      <!--<ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+      </ul>-->
+    </div>
+  </nav>
+  </div>
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center light-blue-text text-lighten-2">Infinideas</h1>
+        <div class="row center">
+          <h5 class="header col s12 white-text text-darken-2" style="font-weight:bolder">
+		  <span style="text-shadow:2px 2px 10px black;">「實現吧 我們的夢想」</span></h5>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">首页</a></li>
-            <li><a href="#about" style="display:hidden">关于</a></li>
-            <li><a href="#contact">联络我们</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">项目<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-          		<li class="dropdown-header"><a href="HackerMissions/index.html">HackerMissions</a></li>
-          		<li><a href="https://github.com/Infinideastudio/HackerMissions">Git</a></li>
-          		<li class="divider"></li>
-          		<li class="dropdown-header"><a href="NEWorld/index.html">NEWorld</a></li>
-          		<li><a href="https://www.neworldsite.icoc.cc">官网</a></li>
-          		<li><a href="http://tieba.baidu.com/p/2822071396">贴吧</a></li>
-				<li class="divider"></li>
-          		<li class="dropdown-header">TernaryLogic</li>
-          		<li><a href="https://github.com/Infinideastudio/TernaryLogic">Git</a></li>
-          		<li class="divider"></li>
-          		<li class="dropdown-header">StringFormat</li>
-          		<li><a href="https://github.com/Infinideastudio/StringFormat">Git</a></li>
-              </ul>
+        <div class="row center">
+          <a href="#" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Join us</a>
+        </div>
+        <br><br>
 
-            </li>
-			<li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Language<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-              	<li><a href="lang/index_eng.html"><span>English</span></a></li>
-              	<li class="active"><a href="#"><span>Simplified Chinese|简体中文</span></a></li>
-				<li><a href="lang/index_trad.html"><span>Traditional Chinese|正體中文/繁體中文</span></a></li>
-              </ul>
-            </li>
-
-          </ul>
-        </div><!--/.nav-collapse -->
       </div>
-    </nav>
-	<div class="container">
-		<p></p> <p></p>
-		<div class="jumbotron">
-			<h1 style="text-align:center">欢迎来到新创无际！</h1>
+    </div>
+    <div class="parallax"><img src="background/bg1.jpg" alt="Unsplashed background img 1" style="display: block; transform: translate3d(-50%, 110px, 0px);"></div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+		
+		<div class="center">
+		<h2><span class="teal-text">What have we made</span></h2>
 		</div>
-		<div style="text-align:center">
-		<p>
-		来访问我们的新项目<a href="https://github.com/Infinideastudio/HackerMissions">HackerMissions的Git</a>吧
-		<br>
-		QQ群 : 434811287 
-		<a target="_blank" href="http://shang.qq.com/wpa/qunwpa?idkey=e69970bf2a8f7db8b43d2b631673c9effcc398c59ce999a32d71e265b6c83e09">
-		<img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" alt="新创无际" title="新创无际"></a>
-		</p>
-		</div>
-		<hr>
-		<footer style="text-align:center">
-        <p>Copyleft <a title="By Zscout370, Sertion, e.a. (Own work) [Public domain], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3ACopyleft.svg"><img width="16" alt="Copyleft" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Copyleft.svg/512px-Copyleft.svg.png"/></a> Infinideas 2014-2015</p>
-        <a href="contribute.html">Contribute to this site</a>
-		|	<script src="http://s11.cnzz.com/z_stat.php?id=1255751145&web_id=1255751145" language="JavaScript"></script>
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">no_icon</i></h2>
+            <h5 class="center">NEWorld</h5>
+			  <div class="center">
+			  <a class="waves-effect waves-teal btn-flat center" href="http://www.neworldsite.gq/">Visit website</a>
+            </div>
+            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+          </div>
+        </div>
 
-      </footer>
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">User Experience Focused</h5>
 
-	</div>
+            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+          </div>
+        </div>
 
-	</div>
-  </body>
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">Easy to work with</h5>
+
+            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="background/bg1.jpg" alt="Unsplashed background img 2" style="display: block;"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Contact Us</h4>
+          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="background/bg1.jpg" alt="Unsplashed background img 3" style="display: block;"></div>
+  </div>
+
+  <footer class="page-footer light-blue">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="index_simp.html">Old Bootstrap website</a></li>
+                  <li><a class="grey-text text-lighten-3" href="http://www.alisummer.com/">Ali Summer</a></li>
+                  <li><a class="grey-text text-lighten-3" href="http://nottres.com/">Nottres</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Infinideas
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
+
+  <!--  Scripts-->
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="mat/js/materialize.js"></script>
+  <!--<script src="mat/js/init.js"></script>-->
+
+  
+	</body>
+
 </html>
