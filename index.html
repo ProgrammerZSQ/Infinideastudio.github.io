@@ -17,6 +17,19 @@
   	main {
   	  flex: 1 0 auto;
  	 }
+   #contact-list{
+    list-style:none;
+   }
+   #contact-list li{
+    margin-top:1em;
+    display:inline-block;
+   }
+   #contact-list li a{
+    width:12em;
+   }
+   @media screen and (max-width:800px){
+    #contact-list li{display:block;}
+   }
       </style>
     </head>
 
@@ -118,10 +131,12 @@
           <h4>聯係方式</h4>
           <!--<p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>-->
           <p class="light">
-            <a href="http://shang.qq.com/wpa/qunwpa?idkey=e69970bf2a8f7db8b43d2b631673c9effcc398c59ce999a32d71e265b6c83e09" id="join-button" class="btn-large waves-effect waves-light green lighten-1">加群434811287</a>
-            <a href="http://neworldgame.sinaapp.com" id="goto-blog-button" class="btn-large waves-effect waves-light yellow lighten-1">聯係NEWorld部落</a>
-            <a href="https://github.com/infinideastudio" id="goto-git-button" class="btn-large waves-effect waves-light red lighten-1">關注Git項目</a>
-            <a href="#footer" id="goto-links-button" class="btn-large waves-effect waves-light blue lighten-1">查看成員鏈接</a>
+            <ul id="contact-list">
+              <li><a href="http://shang.qq.com/wpa/qunwpa?idkey=e69970bf2a8f7db8b43d2b631673c9effcc398c59ce999a32d71e265b6c83e09" id="join-button" class="btn-large waves-effect waves-light green lighten-1">加群434811287</a></li>
+              <li><a href="http://neworldgame.sinaapp.com" id="goto-blog-button" class="btn-large waves-effect waves-light cyan lighten-1">聯係NEWorld</a></li>
+              <li><a href="https://github.com/infinideastudio" id="goto-git-button" class="btn-large waves-effect waves-light red lighten-1">關注Git項目</a></li>
+              <li><a href="#footer" id="goto-links-button" class="btn-large waves-effect waves-light orange lighten-1">查看成員鏈接</a></li>
+            </ul>
           </p>
         </div>
       </div>
