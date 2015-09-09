@@ -8,7 +8,7 @@
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <style>
-    body{font-family:'Arial','Microsoft Jhenghei',sans-serif;display: flex;min-height: 100vh;flex-direction: column;}
+    body{display: flex;min-height: 100vh;flex-direction: column;}
     main{flex: 1 0 auto;}
     #contact-list{list-style: none;}
     #contact-list li{margin-top: 1em;display: inline-block;}
@@ -36,12 +36,15 @@
   text-transform: none;
   letter-spacing: normal;
   word-wrap: normal;
+
   /* Support for all WebKit browsers. */
   -webkit-font-smoothing: antialiased;
   /* Support for Safari and Chrome. */
   text-rendering: optimizeLegibility;
+
   /* Support for Firefox. */
   -moz-osx-font-smoothing: grayscale;
+
   /* Support for IE. */
   font-feature-settings: 'liga';
 }
@@ -56,24 +59,24 @@
     </a>
     <ul>
       <li><a class="btn-floating red waves-effect waves-light" href="http://analytics.google.com/"><i class="material-icons">insert_chart</i></a></li>
-      <li><a class="btn-floating yellow darken-1 waves-effect waves-light" href="#quote"><i class="material-icons">format_quote</i></a></li>
+      <li><a class="btn-floating yellow darken-1 waves-effect waves-light"><i class="material-icons">format_quote</i></a></li>
       <li><a class="btn-floating green waves-effect waves-light" href="#"><i class="material-icons">publish</i></a></li>
-      <li><a class="btn-floating blue waves-effect waves-light" href="#footer"><i class="material-icons">attach_file</i></a></li>
+      <li><a class="btn-floating blue waves-effect waves-light"><i class="material-icons">attach_file</i></a></li>
     </ul>
   	</div>
     <!-- Navagation Bar -->
   <div class="navbar-fixed">
   <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container">
-      <a href="#" class="brand-logo white-text active waves-effect waves-light">Infinideas</a>
+      <a href="index.html" class="brand-logo white-text active waves-effect waves-light">Infinideas</a>
       <ul class="right hide-on-med-and-down">
         <li class="waves-effect waves-light"><a href="members.html">成員</a></li>
-        <li class="waves-effect waves-light"><a href="division.html">分部</a></li>
+        <li class="waves-effect waves-light active"><a href="#">分部</a></li>
         <li class="waves-effect waves-light"><a href="index_simp.html">舊版入口</a></li>
       </ul>
       <ul id="nav-mobile" class="side-nav" style="left: -250px;">
-	  <li> <a class="waves-effect waves-light" href="members.html">成員</a> </li>
-      <li> <a class="waves-effect waves-light" href="division.html">分部</a> </li> 
+	  <li> <a class="waves-effect waves-light active" href="members.html">成員</a> </li>
+      <li> <a class="waves-effect waves-light" href="#">分部</a> </li> 
 	  <li> <a class="waves-effect waves-light" href="index_simp.html">舊版入口</a> </li>
      </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse btn-float waves-effect waves-light"> <i class="material-icons">menu</i> </a>
@@ -91,7 +94,7 @@
         </div>
         <div class="row center">
           <!--puh, this is the download button?-->
-          <a href="#contact" id="download-button" class="btn-large waves-effect waves-light lighten-1">Join us</a>
+          <a href="#contact" id="download-button" class="btn-large waves-effect waves-light lighten-1">View our divisions</a>
         </div>
         <br><br>
 
@@ -101,11 +104,11 @@
   </div>
 
 
-  <div class="container">
+  <div class="container" id="contact">
     <div class="section">
     
-    <div id="quote" class="center">
-    <h2><span class="teal-text">如今的我們</span></h2>
+    <div class="center">
+    <h2><span class="teal-text">新創無際項目組/分部</span></h2>
     </div>
       <!--   Icon Section   -->
       <div class="row">
@@ -114,49 +117,77 @@
       <img class="activator" src="background/nwbg1.jpg" alt="NEWorld"/>
     </div>
     <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">NEWorld  - 新世界<i class="material-icons right">more_vert</i></span>
-      <p><a class="waves-effect waves-teal" href="http://www.neworldsite.gq/">拜訪站點</a></p>
+      <span class="card-title activator grey-text text-darken-4">NEWorld分組<i class="material-icons right">more_vert</i></span>
+      <p><a class="waves-effect waves-teal" onclick="Materialize.toast('<div id=\'qwqq\'>該分組目前不接受加群申請 <span onclick=\'document.getElementById(\\\'qwqq\\\').innerHTML=\\\'\\\'\'></span></div>',4000)">加入</a></p>
     </div>
     <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">NEWorld  - 新世界<i class="material-icons right">close</i></span>
-      <p>不止是不思議的原創游戲，始于<a href="http://www.minecraft.net/">Minecraft</a>卻不止步於<a href="http://www.minecraft.net/">Minecraft</a>！由最初的嘗試到現在大家一起開發的項目，NEWorld正在一步步前進！</p>
+      <span class="card-title grey-text text-darken-4">NEWorld分組<i class="material-icons right">close</i></span>
+      <p>不止是不思議的原創游戲，始于<a href="http://www.minecraft.net/">Minecraft</a>卻不止步於<a href="http://www.minecraft.net/">Minecraft</a>！
+      由最初的嘗試到現在大家一起開發的項目，NEWorld正在一步步前進！<br></p><h5>旗下分支</h5><ul><li><h6>NEWorld網頁分組</h6><br>負責維護和更新NEWorld的網頁。</li></ul>
     </div>
   </div>
-
-        <div class="card col s12 m4">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="img/github.png" alt="NEWorld"/>
+  <div class="card col s12 m4">
+  <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="img/moebg.jpg" alt="NEWorld"/>
     </div>
     <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Group  - 項目組<i class="material-icons right">more_vert</i></span>
-      <p><a class="waves-effect waves-teal" href="http://github.com/infinideastudio/">Infinideastudio</a></p>
+      <span class="card-title activator grey-text text-darken-4">賣萌團分組<i class="material-icons right">more_vert</i></span>
+      <p><a class="waves-effect waves-teal" href="http://shang.qq.com/wpa/qunwpa?idkey=b4186d55b969a4f6da9e153dfd7956a248f2f4edc798613e8232299ad5829a2f/">加入</a></p>
     </div>
     <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Group  - 項目組<i class="material-icons right">close</i></span>
-      <p>通過將相同愛好并共同奮鬥的編程愛好者集結起來，并在GitHub組成了新創無際項目組。從此以後寫代碼的日子不再孤獨！</p>
+      <span class="card-title grey-text text-darken-4">賣萌團分組<i class="material-icons right">close</i></span>
+      <p>只要不惡意賣萌，就可以使勁隨便賣萌的地方ฅ&gt;ω&lt;*ฅ<br>五毛一斤萌！誰要！</p>
     </div>
   </div>
 
-		 <div class="card col s12 m4">
-    <div class="card-image waves-effect waves-block waves-light">
-      <img class="activator" src="background/nwbg3.jpg" alt="NEWorld"/>
+	<div class="card col s12 m4">
+  <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="background/nullbg.jpg" alt="NEWorld"/>
     </div>
     <div class="card-content">
-      <span class="card-title activator grey-text text-darken-4">Diversity - 多元化<i class="material-icons right">more_vert</i></span>
-      <p><a class="waves-effect waves-teal">如你所見</a></p>
+      <span class="card-title activator grey-text text-darken-4"><s>HackerMissions</s>分組<i class="material-icons right">more_vert</i></span>
+      <p><a class="waves-effect waves-teal" href="https://github.com/infinideastudio/HackerMissions">拜訪Git</a></p>
     </div>
     <div class="card-reveal">
-      <span class="card-title grey-text text-darken-4">Diversity - 多元化<i class="material-icons right">close</i></span>
-      <p>如你所見，這不是一個人民公社，也沒有免費的食堂，你可以選擇爲組織開發一些功能，亦可去研究自己的項目，找到自己的支持者！</p>
+      <span class="card-title grey-text text-darken-4"><s>HackerMissions</s>分組<i class="material-icons right">close</i></span>
+      <p><s>HackerMissions</s>是一個關於找出網絡系統中的漏洞從而通關的遊戲。</p>
+    </div>
+  </div>
+<!--end of part-->
+	</div>
+</div>
+<div class="row">
+<div class="card col s12 m4">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="background/nwbg1.jpg" alt="NEWorld"/>
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">NEWorld C++化分組<i class="material-icons right">more_vert</i></span>
+      <p><a class="waves-effect waves-teal" onclick="Materialize.toast('<div id=\'qwqq\'>該分組目前不接受加群申請 <span onclick=\'document.getElementById(\\\'qwqq\\\').innerHTML=\\\'\\\'\'></span></div>',4000)">加入</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">NEWorld C++化分組<i class="material-icons right">close</i></span>
+      <p>謠傳NEWorld將會在v38改為全面使用C++，並棄置FreeBasic版</p><h6>旗下分支</h6><ul><li><a href="https://github.com/Infinideastudio/NEWorld-CPP">NEWorld-CPP(NullWorld)</a></li>
+      <li><a href="https://github.com/Infinideastudio/NEWorld-Cpp-dyt">NEWorld-Cpp-dyt(DYTWorld)</a></li></ul>
     </div>
   </div>
 
-
+<div class="card col s12 m4">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="background/nullbg.jpg" alt="NEWorld"/>
     </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4"><s>TernaryLocig</s>分組<i class="material-icons right">more_vert</i></span>
+      <p><a class="waves-effect waves-teal" href="https://github.com/Infinideastudio/TernaryLogic">拜訪Git</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4"><s>TernaryLogic</s>分組<i class="material-icons right">close</i></span>
+      <p>平衡三進制邏輯模擬器</p> </div>
   </div>
 </div>
+  </div>
 
-  <div class="parallax-container valign-wrapper">
+  <div class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
@@ -166,40 +197,7 @@
     <div class="parallax"><img src="background/nwbg3.jpg" alt="Unsplashed background img 2" style="display: block;"></div>
   </div>
 
-  <div class="container">
-    <div class="section">
-     <div id="contact">
-      <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>聯繫方式</h4>
-          <p class="light">
-            <ul id="contact-list">
-              <li><a href="http://shang.qq.com/wpa/qunwpa?idkey=0169b4358782d4f520c74de5babb6a1734d06973080d3266cfb8fd66ac783978" id="join-button" class="btn-large waves-effect waves-light green lighten-1">加群485952572</a></li>
-              <li><a href="http://neworldgame.sinaapp.com" id="goto-blog-button" class="btn-large waves-effect waves-light cyan lighten-1">聯繫NEWorld</a></li>
-              <li><a href="https://github.com/infinideastudio" id="goto-git-button" class="btn-large waves-effect waves-light red lighten-1">關注Git項目</a></li>
-              <li><a href="#footer" id="goto-links-button" class="btn-large waves-effect waves-light orange lighten-1">查看成員鏈接</a></li>
-            </ul>
-          </p>
-        </div>
-      </div>
-     </div>
-    </div>
-  </div>
-
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <!--<h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>-->
-        </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="background/nwbg2.jpg" alt="Unsplashed background img 3" style="display: block;"></div>
-  </div>
-
-  <footer id="footer" class="page-footer light-blue" id="footer" style="margin-top:0">
+  <footer class="page-footer light-blue" id="footer" style="margin-top:0">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
@@ -229,6 +227,7 @@
   <!--  Scripts-->
   <script src="js/jquery-1.11.3.min.js"></script>
   <script src="mat/js/materialize.js"></script>
+  <!--<script src="mat/js/init.js"></script>-->
   <script>
   (function($){
   $(function(){
@@ -238,6 +237,7 @@
   }); // end of document ready
 })(jQuery); // end of jQuery name space
   </script>
+
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
