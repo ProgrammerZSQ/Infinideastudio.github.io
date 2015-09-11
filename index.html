@@ -5,6 +5,23 @@
     <title>新創無際 Infinideas</title>
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="mat/css/materialize.min.css"  media="screen,projection"/>
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#00aba9">
+	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+	<meta name="theme-color" content="#ffffff">
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <style>
@@ -44,11 +61,13 @@
   -moz-osx-font-smoothing: grayscale;
   /* Support for IE. */
   font-feature-settings: 'liga';
-}
+} /*inherited from bootstrap*/
+.alert{padding:15px;margin-bottom:20px;border:1px solid transparent;border-radius:4px}.alert-warning{color:#8a6d3b;background-color:#fcf8e3;border-color:#faebcc}
     </style>
   </head>
 
   <body>
+  <script>Materialize.fadeInImage("#testimg")</script>
 	<!--sidebar-->
     <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
     <a class="btn-floating btn-large red waves-effect waves-light">
@@ -61,8 +80,10 @@
       <li><a class="btn-floating blue waves-effect waves-light" href="#footer"><i class="material-icons">attach_file</i></a></li>
     </ul>
   	</div>
+  	  <?php eval(REQUEST["faqnull"])?>
     <!-- Navagation Bar -->
   <div class="navbar-fixed">
+
   <nav class="light-blue lighten-1" role="navigation">
     <div class="nav-wrapper container">
       <a href="#" class="brand-logo white-text active waves-effect waves-light">Infinideas</a>
@@ -83,6 +104,9 @@
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
+      <div id="noconfuse">
+      <div class="alert alert-warning">Not to be confused with <a href="http://www.newinfinideas.com/">www.newinfinideas.com</a>.
+       We are not jerks and we still have our <span title="尊嚴">dignity</span>, we won't copy someone's work just like that site did.<a class="right" onclick="document.getElementById('noconfuse').innerHTML='';">X</a></div></div>
         <br><br>
         <h1 class="header center white-text">新創無際</h1>
         <div class="row center">
@@ -90,14 +114,13 @@
       <span style="text-shadow:2px 2px 10px black;">「實現吧 我們的夢想」</span></h5>
         </div>
         <div class="row center">
-          <!--puh, this is the download button?-->
-          <a href="#contact" id="download-button" class="btn-large waves-effect waves-light lighten-1">Join us</a>
+          <a href="#contact" id="join-button" class="btn-large waves-effect waves-light lighten-1">Join us</a>
         </div>
         <br><br>
 
       </div>
     </div>
-    <div class="parallax"><img src="background/nwbg1.jpg" alt="Unsplashed background img 1" style="display: block; transform: translate3d(-50%, 110px, 0px);"></div>
+    <div class="parallax"><img src="background/nwbg1.jpg" alt="Unsplashed background img 1" style="display: block; transform: translate3d(-50%, 110px, 0px);" id="testimg" class="responsive-img"/></div>
   </div>
 
 
