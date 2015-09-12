@@ -101,12 +101,19 @@
     </div>
   </nav>
   </div>
+  <script>
+  var fadeoutnoconfuse = function(){
+  $( "#noconfuse" ).fadeOut( "fast", function() {
+    // Animation complete.
+  });
+  };
+  </script>
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
       <div id="noconfuse">
       <div class="alert alert-warning">Not to be confused with <a href="http://www.newinfinideas.com/">www.newinfinideas.com</a>.
-       We are not jerks and we still have our <span title="尊嚴">dignity</span>, we won't copy someone's work just like that site did.<a class="right" onclick="document.getElementById('noconfuse').innerHTML='';">X</a></div></div>
+       We are not jerks and we still have our <span title="尊嚴">dignity</span>, we won't copy someone's work just like THAT site did.<a class="right" onclick="fadeoutnoconfuse()">Dismiss</a></div></div>
         <br><br>
         <h1 class="header center white-text">新創無際</h1>
         <div class="row center">
@@ -138,7 +145,7 @@
     </div>
     <div class="card-content">
       <span class="card-title activator grey-text text-darken-4">NEWorld  - 新世界<i class="material-icons right">more_vert</i></span>
-      <p><a class="waves-effect waves-teal" href="http://www.neworldsite.gq/">拜訪站點</a></p>
+      <p><a class="waves-effect waves-teal" onclick="Materialize.toast('該站點目前失效。',4000)"><s>拜訪站點</s></a></p>
     </div>
     <div class="card-reveal">
       <span class="card-title grey-text text-darken-4">NEWorld  - 新世界<i class="material-icons right">close</i></span>
@@ -255,9 +262,7 @@
   <script>
   (function($){
   $(function(){
-
     $('.button-collapse').sideNav();
-
   }); // end of document ready
 })(jQuery); // end of jQuery name space
   </script>
@@ -266,7 +271,6 @@
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
   ga('create', 'UA-65523931-1', 'auto');
   ga('send', 'pageview');
 </script>
