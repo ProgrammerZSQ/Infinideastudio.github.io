@@ -70,7 +70,9 @@
 	var ctrl= document.getElementById("emojih1");
 	ctrl.innerHTML = randomnumber.toString();
 	switch(randomnumber){case 1: ctrl.innerHTML = "∑(っ°Д°;)っ";break; case 2: ctrl.innerHTML = "╭(°A°`)╮"; break; case 3: ctrl.innerHTML = "(╯°□°）╯︵ ┻━┻"}
-	console.log(randomnumber);}</script>
+	console.log(randomnumber);
+	document.getElementById("rolling").classList.remove("active");}
+	</script>
 		<nav class="navbar-fixed blue" role="navigation">
 	<div class="nav-wrapper container">
      <a href="" class="brand-logo white-text center">404 Not Found</a></div>	</nav>
@@ -79,19 +81,37 @@
 	<!--title(maybe)-->  
   <div>
   <!--<span>404 - Not Found</span>-->
-  <h1 id="emojih1">∑(っ°Д°;)っ</h1>
+  <div class="preloader-wrapper active" id="rolling">
+    <div class="spinner-layer spinner-green-only">
+      <div class="circle-clipper left">
+        <div class="circle"></div>
+      </div><div class="gap-patch">
+        <div class="circle"></div>
+      </div><div class="circle-clipper right">
+        <div class="circle"></div>
+      </div>
+    </div>
+  </div>
+  <h1 id="emojih1"></h1>
   <h3>We can't find that page!</h3> </div>
   <blockquote>
   "Oops. You trapped yourself. I guess that's it then. Thanks for testing. You may as well lie down and get acclimated to the being dead position."  
   "I'm kidding. Not about you trapping yourself, though. That really happened. Here, I'll lower the glass. Go on... Finish the test."
   </blockquote>
-  <div class="right-align"><span>——GLaDOS, Genetic Lifeform and Disk Operating System</span></div>
-  <div id="action"><a href="javascript: window.history.back"><i class="material-icons">keyboard_backspace</i> Go back to previous page</a> <p></p>
-  <a href="http://infinideastudio.github.io"><i class="material-icons">keyboard_backspace</i> Go back to home page</a></div>
- 
-  
-  
-  
+  <div class="right-align"><span>——GLaDOS, Genetic Lifeform and Disk Operating System, <i>Portal 2</i> (2011)</span></div>
+  <audio controls id="player1" hidden><source src="http://i1.theportalwiki.net/img/7/7a/GLaDOS_sp_a2_turret_blocker_future_starter01.wav" type="audio/wav">Your browser does not support .wav.</audio>
+    <audio controls id="player2" hidden><source src="http://i1.theportalwiki.net/img/5/59/GLaDOS_sp_a2_turret_blocker_future_starter02.wav" type="audio/wav">Your browser does not support .wav.</audio>
+<a href="javascript: document.getElementById('player1').play();"><i class="material-icons">volume_up</i> Play audio</a>
+<p></p>
+<div id="action"><a href="javascript: window.history.back"><i class="material-icons">keyboard_backspace</i> Go back to the previous page</a> <p></p>
+  <a href="http://infinideastudio.github.io"><i class="material-icons">keyboard_backspace</i> Go back to the home page</a></div>
+ <script>
+ var p1 = document.getElementById("player1");
+ var p2 = document.getElementById("player2");
+ p1.onended = function(){
+ p2.play();
+ }
+ </script> 
   </div>
   </body>
  </html>
