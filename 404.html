@@ -65,7 +65,12 @@
 .alert{padding:15px;margin-bottom:20px;border:1px solid transparent;border-radius:4px}.alert-warning{color:#8a6d3b;background-color:#fcf8e3;border-color:#faebcc}
     </style>
   </head>
-	<body>
+	<body onload="load()">
+	<script>var load = function(){var randomnumber=Math.floor(Math.random()*3)+1;
+	var ctrl= document.getElementById("emojih1");
+	ctrl.innerHTML = randomnumber.toString();
+	switch(randomnumber){case 1: ctrl.innerHTML = "∑(っ°Д°;)っ";break; case 2: ctrl.innerHTML = "╭(°A°`)╮"; break; case 3: ctrl.innerHTML = "(╯°□°）╯︵ ┻━┻"}
+	console.log(randomnumber);}</script>
 		<nav class="navbar-fixed blue" role="navigation">
 	<div class="nav-wrapper container">
      <a href="" class="brand-logo white-text center">404 Not Found</a></div>	</nav>
@@ -74,7 +79,7 @@
 	<!--title(maybe)-->  
   <div>
   <!--<span>404 - Not Found</span>-->
-  <h1>∑(っ°Д°;)っ</h1>
+  <h1 id="emojih1">∑(っ°Д°;)っ</h1>
   <h3>We can't find that page!</h3> </div>
   <blockquote>
   "Oops. You trapped yourself. I guess that's it then. Thanks for testing. You may as well lie down and get acclimated to the being dead position."  
