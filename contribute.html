@@ -2,88 +2,176 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Infinideas">
-	<meta name="keywords" content="Infinideas,Infinideastudio">
-	<meta name="author" content="jacky8399(0u0)">
-    <title>Infinideas</title>
-	<!--Bootstrap-->
-	<link href="b4l/css/bootstrap.min.css" rel="stylesheet">
-	<link href="b4l/css/bootstrap-theme.min.css" rel="stylesheet">
-	<style>
-	</style>
+    <title>新創無際 Infinideas</title>
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="mat/css/materialize.min.css"  media="screen,projection"/>
+	<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#00aba9">
+	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style>
+    body{font-family:'Arial','Microsoft Jhenghei',sans-serif;display: flex;min-height: 100vh;flex-direction: column;}
+    main{flex: 1 0 auto;}
+    #contact-list{list-style: none;}
+    #contact-list li{margin-top: 1em;display: inline-block;}
+    #contact-list li a{width: 12em;}
+    @media screen and (max-width: 800px){#contact-list li{display: block;}}
+    @font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+       local('MaterialIcons-Regular'),
+       url(MaterialIcons-Regular.woff2) format('woff2'),
+       url(MaterialIcons-Regular.woff) format('woff'),
+       url(MaterialIcons-Regular.ttf) format('truetype');}
+       .material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+} /*inherited from bootstrap*/
+.alert{padding:15px;margin-bottom:20px;border:1px solid transparent;border-radius:4px}.alert-warning{color:#8a6d3b;background-color:#fcf8e3;border-color:#faebcc}
+    .bt-btn{display:inline-block;padding:6px 12px;margin-bottom:0;font-size:14px;font-weight:400;line-height:1.42857143;text-align:center;white-space:nowrap;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;background-image:none;border:1px solid transparent;border-radius:4px}
+    .bt-btn-default{color:#333;background-color:#fff;border-color:#ccc}
+    .btn-with-count{float:left;border-top-right-radius:0;border-bottom-right-radius:0}.btn-sm{padding:2px 10px}
+    </style>
   </head>
   <body>
-	<script src="js/jquery-1.11.3.min.js"></script>
-	<script src="b4l/js/bootstrap.min.js"></script>
-	
-	<nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-<div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Infinideas</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#about" style="display:hidden">About</a></li>
-            <li><a href="#contact">Contact us</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-          		<li class="dropdown-header"><a href="../HackerMissions/index.html">HackerMissions</a></li>
-          		<li><a href="https://github.com/Infinideastudio/HackerMissions">Git</a></li>
-          		<li class="divider"></li>
-          		<li class="dropdown-header"><a href="../NEWorld/index.html">NEWorld</a></li>
-          		<li><a href="https://www.neworldsite.icoc.cc">Official Page</a></li>
-          		<li><a href="http://tieba.baidu.com/p/2822071396">Tieba</a></li>
-				<li class="divider"></li>
-          		<li class="dropdown-header">TernaryLogic</li>
-          		<li><a href="https://github.com/Infinideastudio/TernaryLogic">Git</a></li>
-          		<li class="divider"></li>
-          		<li class="dropdown-header">StringFormat</li>
-          		<li><a href="https://github.com/Infinideastudio/StringFormat">Git</a></li>
+      <div class="navbar-fixed">
+      
+	<ul id="divisiondrop" class="dropdown-content">
+  <li><a href="division.html">List of Divisions</a></li>
+  <li class="divider"></li>
+  <li><a href="neworld.html">NEWorld</a></li>
+  <li><a href="islsurv.html">Island Survival</a></li>
+</ul>
+<ul id="divisiondropp" class="dropdown-content">
+ <li><a href="division.html">List of Divisions</a></li>
+  <li class="divider"></li>
+  <li><a href="neworld.html">NEWorld</a></li>
+  <li><a href="islsurv.html">Island Survival</a></li>
+</ul>
 
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Language<span class="caret"></span></a>
-              <ul class="dropdown-menu">
-              	<li class="active"><a href="lang/index_eng.html"><span>English</span></a></li>
-              	<li><a href="index.html"><span>Simplified Chinese|简体中文</span></a></li>
-				<li><a href="lang/index_trad.html"><span>Traditional Chinese|正體中文/繁體中文</span></a></li>
-              </ul>
-            </li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
+ 		<nav class="light-blue lighten-1" role="navigation">
+  		<div class="nav-wrapper container">
+      	<a href="index.html" class="brand-logo white-text active waves-effect waves-light">Infinideas</a>
+     	 <ul class="right hide-on-med-and-down">
+     	   <li class="waves-effect waves-light"><a href="members.html">成員</a></li>
+     	 <li> <a class="waves-effect waves-light dropdown-button" data-activates="divisiondrop" href="#!">分部<i class="material-icons right">arrow_drop_down</i></a> </li> 
+     	   <li class="waves-effect waves-light"><a href="index_simp.html">舊版入口</a></li>
+     	 </ul>
+    	  <ul id="nav-mobile" class="side-nav" style="left: -250px;">
+	 	 <li> <a class="waves-effect waves-light" href="members.html">成員</a> </li>
+    	  <li> <a class="waves-effect waves-light dropdown-button" data-activates="divisiondropp">分部<i class="material-icons right">arrow_drop_down</i></a> </li> 
+		  <li> <a class="waves-effect waves-light" href="index_simp.html">舊版入口</a> </li>
+     	</ul>
+    	  <a href="#" data-activates="nav-mobile" class="button-collapse btn-float waves-effect waves-light"> <i class="material-icons">menu</i> </a>
+    	</div>
+
+  
+  
+  
+		</nav>      
+	</div>
 	<div class="container">
 	<p></p>
 	<p></p>
-	<div class="jumbotron">
+	<div class="">
 	<h1 style="text-align:center">Contribute to this site</h1>
 	<p style="text-indent:4px">Think this site is not pretty enough? Thought of something that can make this site better? Why not tell us!</p>
 	</div>
 	<div class="page-header"><h3>I have some ideas...</h3></div>
 	<p>If you have any ideas, please tell us by <a href="mailto:infinideas@163.com">sending us an e-mail</a></p>
 	<div class="page-header"><h3>But... what if I know HTML well?</h3></div>
-	<p>If you know HTML, you can fork <a href="https://github.com/Infinideastudio/Infinideastudio.github.io">the repo of this site on GitHub</a> by pressing the <a class="btn btn-default"><span>Fork</span></a> button on the upper right corner.</p>
+	<p>If you know HTML, you can fork <a href="https://github.com/Infinideastudio/Infinideastudio.github.io">the repo of this site on GitHub</a> by pressing the <a class="bt-btn bt-btn-default btn-sm"><span>Fork</span></a> button on the upper right corner.</p>
 	<p>Then, go back to your forked repo and edit the files. And finally create a pull request to merge the files that you've changed.</p>
-	<hr>
-	<footer style="text-align:center">
-        <p>Copyleft <a title="By Zscout370, Sertion, e.a. (Own work) [Public domain], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File%3ACopyleft.svg"><img width="16" alt="Copyleft" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Copyleft.svg/512px-Copyleft.svg.png"/></a> Infinideas 2014-2015</p>
-        <a href="contribute.html">Contribute to this site</a>
-		|	<script src="http://s11.cnzz.com/z_stat.php?id=1255751145&web_id=1255751145" language="JavaScript"></script>
+		</div>
+	<footer id="footer" class="page-footer light-blue" id="footer" style="margin-top:0">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Infinideas - 新創無際</h5>
+                <p class="grey-text text-lighten-4">頁脚内容，右邊是鏈接 :)</p>
+                <a href="http://anquan.org"><img alt="安全联盟实名验证" src="background/scanv.png"></a>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">鏈接</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="index_simp.html">Legacy site</a></li>
+                  <li><a class="grey-text text-lighten-3" href="http://blog.alisummer.com/">Ali's Blog</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://nottres.com/">Nottres Main</a></li>
+                  <li><a class="grey-text text-lighten-3" href="http://jacky8399.cf/">0u0哭瞎</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            &copy; 2015 Infinideas 新創無際
+            <a class="grey-text text-lighten-4 right" href="links.html">更多鏈接</a>
+            </div>
+          </div>
+        </footer>
 
-      </footer>
 
-	</div>
+
+<!--  Scripts-->
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="mat/js/materialize.js"></script>
+  <script>
+  (function($){
+  $(function(){
+    $('.button-collapse').sideNav();
+    $(".dropdown-button").dropdown();
+
+  }); // end of document ready
+})(jQuery); // end of jQuery name space
+
+$(document).ready(function(){
+      $('.parallax').parallax();
+    });
+        
+  </script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-65523931-1', 'auto');
+  ga('send', 'pageview');
+</script>
 
 </body>
 </html>
