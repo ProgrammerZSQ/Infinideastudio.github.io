@@ -70,7 +70,6 @@
 	var ctrl= document.getElementById("emojih1");
 	ctrl.innerHTML = randomnumber.toString();
 	switch(randomnumber){case 1: ctrl.innerHTML = "∑(っ°Д°;)っ";break; case 2: ctrl.innerHTML = "╭(°A°`)╮"; break; case 3: ctrl.innerHTML = "(╯°□°）╯︵ ┻━┻"}
-	console.log(randomnumber);
 	document.getElementById("rolling").classList.remove("active");}
 	</script>
 		<nav class="navbar-fixed blue" role="navigation">
@@ -101,7 +100,7 @@
   <div class="right-align"><span>——GLaDOS, Genetic Lifeform and Disk Operating System, <i>Portal 2</i> (2011)</span></div>
   <audio controls id="player1" hidden><source src="http://i1.theportalwiki.net/img/7/7a/GLaDOS_sp_a2_turret_blocker_future_starter01.wav" type="audio/wav">Your browser does not support .wav.</audio>
     <audio controls id="player2" hidden><source src="http://i1.theportalwiki.net/img/5/59/GLaDOS_sp_a2_turret_blocker_future_starter02.wav" type="audio/wav">Your browser does not support .wav.</audio>
-<a href="javascript: document.getElementById('player1').play();"><i class="material-icons">volume_up</i> Play audio</a>
+<a href="javascript:var c = document.getElementById('player1');if(c.paused && document.getElementById('player2').paused)c.play();"><i class="material-icons">volume_up</i> Play audio</a>
 <p></p>
 <div id="action"><a href="javascript:window.history.back();"><i class="material-icons">keyboard_backspace</i> Go back to the previous page</a> <p></p>
   <a href="http://infinideastudio.github.io"><i class="material-icons">keyboard_backspace</i> Go back to the home page</a></div>
@@ -113,5 +112,9 @@
  }
  </script> 
   </div>
+  <footer>
+  <p></p>
+  <div class="center-align"><span>Copyright &copy; Infinideas 2015</span></div>
+  </footer>
   </body>
  </html>
